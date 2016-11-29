@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MobilePlay</string>
+    <string name="tab_main">本地音乐</string>
+    <string name="net_music">网络音乐</string>
+    <string name="net_vedio">网络视频</string>
+    <string name="sd_music">本地音乐</string>
+    <string name="tab_sd_vedio">本地视频</string>
+</resources>

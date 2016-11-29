@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/color_434e5f"
+    android:layout_height="80dp">
+
+
+
+    <ImageView
+        android:id="@+id/iv_vedio"
+        android:src="@drawable/music_record"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_width="120dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/tv_vedio_name"
+        android:text="肖申克的救赎"
+        android:layout_toRightOf="@id/iv_vedio"
+        android:layout_alignTop="@id/iv_vedio"
+        style="@style/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_vedio_size"
+        android:text="587MB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textColor"
+        android:layout_alignBottom="@id/iv_vedio"
+        android:layout_toRightOf="@id/iv_vedio"/>
+
+    <TextView
+        android:id="@+id/tv_vedio_duration"
+        android:text="02:35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textColor"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:layout_alignBottom="@id/iv_vedio"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

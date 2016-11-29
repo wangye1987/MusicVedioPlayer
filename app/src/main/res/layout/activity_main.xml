@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RadioGroup
+        android:id="@+id/main_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/tab_main"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/tab_main_selector"
+            android:checked="true"
+            android:text="@string/tab_main" />
+
+        <RadioButton
+            android:id="@+id/tab_sd_music"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/tab_sd_selector"
+            android:text="@string/tab_sd_vedio" />
+
+        <RadioButton
+            android:id="@+id/tab_net_music"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/tab_netmusic_selector"
+            android:text="@string/net_music" />
+
+        <RadioButton
+            android:id="@+id/tab_net_vedio"
+            style="@style/tab_main_style"
+            android:drawableTop="@drawable/tab_netvedio_selector"
+            android:text="@string/net_vedio" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_above="@id/main_buttom"
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <include
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        layout="@layout/titlebar"></include>
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@id/main_buttom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+
+</RelativeLayout>
